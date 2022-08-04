@@ -3,8 +3,8 @@ different packages. To switch between the two packages, you can use the
 environment variable `TARGET_PACKAGE_NAME`, being one of `pack_a` or `pack_b`.
 
 ```
-TARGET_PACKAGE_NAME=pack_a python setup.py sdist
-TARGET_PACKAGE_NAME=pack_b python setup.py sdist
+$ TARGET_PACKAGE_NAME=pack_a python setup.py sdist
+$ TARGET_PACKAGE_NAME=pack_b python setup.py sdist
 ```
 
 Built packages are available in the `dist` directory.
@@ -19,8 +19,8 @@ dist
 You can use the `pip` command to install the packages:
 
 ```
-pip install dist/pack_a-1.0.tar.gz
-pip install dist/pack_b-1.0.tar.gz
+$ pip install dist/pack_a-1.0.tar.gz
+$ pip install dist/pack_b-1.0.tar.gz
 ```
 
 And so, two different packages can live in the same repository.
